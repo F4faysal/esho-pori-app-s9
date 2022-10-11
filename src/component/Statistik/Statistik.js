@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Features = () => {
+const Statistik = () => {
     return (
         <div>
-            Features
+            statistik
         </div>
     );
 };
 
-export default Features;
+export default Statistik;
