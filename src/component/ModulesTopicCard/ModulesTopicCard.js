@@ -5,7 +5,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ModulesTopicCard = ({ topic, getTopicDetails }) => {
-    console.log(topic)
+    // console.log(topic)
     const { name, logo, total , id } = topic;
     return (
         <div className='flex flex-col  w-56 h-64 border-solid border-2 border-white shadow-2xl rounded'>
@@ -16,7 +16,7 @@ const ModulesTopicCard = ({ topic, getTopicDetails }) => {
                 <h1 className='font-semibold text-1xl text-blue-500'> {name} </h1>
                 <div className='text-sm px-2 hover:bg-slate-500 bg-blue-500 rounded text-white'>
 
-                    <Link to={`/quiz/${id}`}>Start Practice <FontAwesomeIcon icon={faArrowRight} ></FontAwesomeIcon></Link>
+                    <Link to={`quiz/${id}`}>Start Practice <FontAwesomeIcon icon={faArrowRight} ></FontAwesomeIcon></Link>
                 </div>
             </div>
         </div>
