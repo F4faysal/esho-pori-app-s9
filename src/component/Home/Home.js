@@ -5,6 +5,12 @@ import ModulesTopicCard from '../ModulesTopicCard/ModulesTopicCard';
 const Home = () => {
     const modulesTopics = useLoaderData();
     const { data, status } = modulesTopics;
+    
+    const getTopicDetails = (id) => {
+        
+    }
+
+
 
     return (
         <div className="">
@@ -17,7 +23,8 @@ const Home = () => {
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center mt-10 '>
                 {
-                    data.map(topic => <ModulesTopicCard topic={topic} key={topic.id} > </ModulesTopicCard>)
+                    data.map(topic => <ModulesTopicCard topic={topic} getTopicDetails={getTopicDetails} key={topic.id} ></ModulesTopicCard>)
+                    // data.map(topic =><ModulesTopicCard topic={topic} key={topic.id} ></ModulesTopicCard>)
                 }
             </div>
         </div>
