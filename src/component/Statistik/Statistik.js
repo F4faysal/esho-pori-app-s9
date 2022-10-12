@@ -1,8 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { Bar, BarChart } from 'recharts';
+import { Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 
-const data = [{ name: 'Page A', uv: 400, pv: 2400, amt: 2400 }];
 
 
 const Statistik = () => {
@@ -10,30 +9,29 @@ const Statistik = () => {
     
     const { data } = statistik
     console.log(data)
-   
+
     return (
-        <div>
+        <div className= ''>
+            <div className='bg-slate-500 w-full flex flex-col  items-center py-10'>
+                <h1 className='text-5xl text-white font-semibold '>statistik of quiz mark</h1>
+            </div>
 
-            <BarChart width={150} height={40} data={data}>
-                <Bar dataKey='data.total' fill="#8884d8" />
-            </BarChart>
-            
+            <div className=' flex justify-center mt-6 '>
+                <LineChart width={500}
+                    height={300}
+                    data={data}>
 
-            {/* {
-                data.map(datas => <Rechat datas={datas}></Rechat> )
-           } */}
+                    <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip></Tooltip>
+
+                </LineChart>
+            </div>
+         
+        
     </div>
     );
 };
-
-
-const Rechat = ({ datas }) => {
-    console.log(datas)
-    return (
-        <BarChart width={150} height={40} data={datas}>
-            <Bar dataKey='datas.total' fill="#8884d8" />
-        </BarChart>
-    )
-}
 
 export default Statistik;
