@@ -2,10 +2,12 @@
 
 Project gitHub link : [github](https://github.com/programming-hero-web-course2/b6-quiz-crackerz-F4faysal).
 
+https://github.com/programming-hero-web-course2/b6-quiz-crackerz-F4faysal
+
 ## netlify live link
 
-[Gooo netlify](https://esho-pori.netlify.app/quiz/1).
-
+[Gooo netlify](https://esho-pori.netlify.app/).
+https://esho-pori.netlify.app/
 you can enjoy : netlify live
 
 ## রিএক্ট টুলকিট , এসো পড়ি
