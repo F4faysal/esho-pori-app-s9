@@ -25,6 +25,7 @@ function App() {
         },
         {
           path: '/statistik',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element : <Statistik></Statistik>
         },
         {

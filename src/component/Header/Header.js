@@ -8,7 +8,7 @@ const Header = () => {
         <nav className='w-full flex justify-between items-center px-3 md:px-20 h-16 bg-[#1c2b35]'>
 
             <div className='logo'>
-                <Link to='/' className='text-1xl md:text-3xl text-white x-0'>Esho Poti</Link>
+                <Link to='/' className='text-1xl md:text-3xl text-white x-0'>এসো পড়ি</Link>
             </div>
 
             <div className="flex md:space-x-2 space-x-0">
