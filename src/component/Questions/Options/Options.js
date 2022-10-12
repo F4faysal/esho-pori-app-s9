@@ -2,15 +2,6 @@ import React from 'react';
 
 const Options = ({ option, correctAnswer, checked }) => {
 
-    //
-    // if (correctAnswer === option) {
-    //     message = <p>cret ans</p>
-    // }
-    // else {
-    //     message = <p>rong ans</p>
-
-    // }
-    
 
     return (
         <div className={`  w-11/12  p-6 shadow hover:shadow-lg rounded-lg  bg-slate-600 hover:bg-slate-900 text-white  `} >
