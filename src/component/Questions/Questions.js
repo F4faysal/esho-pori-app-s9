@@ -3,10 +3,20 @@ import Options from './Options/Options';
 
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { toast } from 'react-toastify';
+
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+// function App() {
+//     const notify = () => toast("Wow so easy!");
 
+//     return (
+//         <div>
+//             <button onClick={notify}>Notify!</button>
+//             <ToastContainer />
+//         </div>
+//     );
+// }
 
 
 
@@ -16,13 +26,17 @@ const Questions = ({ questione, lengtn } ) => {
 
     const arryAnswer = []
     arryAnswer.push(correctAnswer)
-    const notify = () => toast("Wow so easy!");
-    notify()
+
+
+
+    const notify = () => toast("উত্তর সঠিক হয়েছে");
+    
     console.log('sotto')
     function checked(ans) {
         const hello = arryAnswer.find(answer => answer === ans)
         if (ans === hello) {
             notify()
+
             console.log('sotti')
         }
         else {
@@ -47,6 +61,7 @@ const Questions = ({ questione, lengtn } ) => {
                     options.map(option => <Options checked={checked} option={option} correctAnswer={correctAnswer} kry={correctAnswer}></Options>)
                 }
             </div>
+            <ToastContainer />
         </div>
     );
 };
